@@ -28,7 +28,7 @@ jobs:
       # Upload to IPFS:
       - name: Try to upload built packages to IPFS
         if: ${{ job.status == 'success' }}
-        uses: aquiladev/ipfs-action@v0.1.6
+        uses: aquiladev/ipfs-action@v0.2.0
         id: ipfs
         with:
           path: ./build
